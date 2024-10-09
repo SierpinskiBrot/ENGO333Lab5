@@ -70,7 +70,8 @@ Matrix R1(double angle) {
     rMat.at(2,2) = cos(angle);
     rMat.at(1,2) = sin(angle);
     rMat.at(2,1) = -sin(angle);
-    return rMat; }
+    return rMat;
+}
 Matrix R2(double angle) {
     Matrix rMat(3,3);
     rMat.at(1,1) = 1;
@@ -78,7 +79,8 @@ Matrix R2(double angle) {
     rMat.at(2,2) = cos(angle);
     rMat.at(0,2) = -sin(angle);
     rMat.at(2,0) = sin(angle);
-    return rMat; }
+    return rMat;
+}
 Matrix R3(double angle) {
     Matrix rMat(3,3);
     rMat.at(2,2) = 1;
@@ -86,4 +88,5 @@ Matrix R3(double angle) {
     rMat.at(0,0) = cos(angle);
     rMat.at(0,1) = sin(angle);
     rMat.at(1,0) = -sin(angle);
-    return rMat; }
+    return rMat;
+}
