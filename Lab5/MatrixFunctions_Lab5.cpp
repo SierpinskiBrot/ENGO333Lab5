@@ -1,5 +1,6 @@
 #include "MatrixFunctions_Lab5.h"
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -59,4 +60,30 @@ Matrix Add(const Matrix& A, Matrix& B)
     return result;
 }
 
+
 // TO DO: Implement rotation matrix functions from the prelab
+
+Matrix R1(double angle) {
+    Matrix rMat(3,3);
+    rMat.at(0,0) = 1;
+    rMat.at(1,1) = cos(angle);
+    rMat.at(2,2) = cos(angle);
+    rMat.at(1,2) = sin(angle);
+    rMat.at(2,1) = -sin(angle);
+    return rMat; }
+Matrix R2(double angle) {
+    Matrix rMat(3,3);
+    rMat.at(1,1) = 1;
+    rMat.at(0,0) = cos(angle);
+    rMat.at(2,2) = cos(angle);
+    rMat.at(0,2) = -sin(angle);
+    rMat.at(2,0) = sin(angle);
+    return rMat; }
+Matrix R3(double angle) {
+    Matrix rMat(3,3);
+    rMat.at(2,2) = 1;
+    rMat.at(1,1) = cos(angle);
+    rMat.at(0,0) = cos(angle);
+    rMat.at(0,1) = sin(angle);
+    rMat.at(1,0) = -sin(angle);
+    return rMat; }

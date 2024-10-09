@@ -31,6 +31,15 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="G.txt" />
+		<Unit filename="Lab4.cpp" />
+		<Unit filename="Lab5.cbp" />
+		<Unit filename="M.txt" />
+		<Unit filename="MatrixFunctions.h" />
+		<Unit filename="MatrixFunctions_Lab5.cpp" />
+		<Unit filename="MatrixFunctions_Lab5.h" />
+		<Unit filename="Matrix_Lab5.cpp" />
+		<Unit filename="Matrix_Lab5.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

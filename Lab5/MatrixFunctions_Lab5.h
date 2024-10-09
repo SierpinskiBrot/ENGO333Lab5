@@ -16,6 +16,15 @@ Matrix Add(const Matrix& A, Matrix& B);
 
 //TO DO: Add prototypes for rotation matrices from the Prelab:
 
+//Rotation about 1 (x) axis
+Matrix R1(double angle);
+
+//Rotation about 2 (y) axis
+Matrix R2(double angle);
+
+//Rotation about 3 (z) axis
+Matrix R3(double angle);
+
 
 #endif // MATRIX_FUNCTIONS_H
 

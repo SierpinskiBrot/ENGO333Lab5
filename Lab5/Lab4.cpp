@@ -2,8 +2,8 @@
 // Main program file for lab 4
 // Insert author information here
 
-#include "Matrix_Lab4.h"
-#include "MatrixFunctions.h"
+#include "Matrix_Lab5.h"
+#include "MatrixFunctions_Lab5.h"
 #include <iostream>
 #include <fstream>
 
@@ -11,7 +11,6 @@ using namespace std;
 
 int main()
 {
-	// Insert your pre-lab program here
     int rows;
     int cols;
 
@@ -36,24 +35,21 @@ int main()
 	Matrix mat;
     mat.read("input.txt");
     cout << endl << "Matrix entered: " << endl;
-    displayMatrix(mat);
+    mat.print(6,3);
 
     cout << endl << "Determinant of matrix: " << mat.det() << endl;
 
     cout << endl << "Inverse of matrix: " << endl;
     Matrix inverse = mat.inv();
-    displayMatrix(inverse);
+    inverse.print(6,3);
 
     cout << endl << "Product of matrix and its inverse: " << endl;
-    Matrix product = Product(mat,inverse);
-    displayMatrix(product);
+    Matrix product = Multiply(mat,inverse);
+    product.print(6,3);
 
-	// Before you go further, build the project and make sure your program works with
-    // with no errors
 
 
 	return 0;
-
 }
 
 

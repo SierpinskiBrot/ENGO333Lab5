@@ -77,9 +77,14 @@ public:
    void print( const string& filename, int width, int precision );
 
    //LAB 5: Put your 3 member function prototypes here:
+    Matrix multiply(Matrix B); //Multiply self by matrix B
+    Matrix multiply(double K); //Multiply self by constant K
+    Matrix add(Matrix B);      //Add self to matrix B
 
    //LAB 5: Then put 3 operator overload prototypes here:
-
+    Matrix operator*(Matrix B); //Overload * operator for matrix multiplication
+    Matrix operator*(double K); //Overload * operator for scalar multiplication
+    Matrix operator+(Matrix B); //Overload + operator for matrix addition
 
 private:
    unsigned int n_rows;

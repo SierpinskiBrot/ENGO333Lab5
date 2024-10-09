@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1728507488 source:c:\users\gbols\onedrive\documents\engo333lab5\lab5\matrix_lab5.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<fstream>
+	<iomanip>
+	<cmath>
+	"Matrix_Lab5.h"
+
+1728511255 c:\users\gbols\onedrive\documents\engo333lab5\lab5\matrix_lab5.h
+	<vector>
+	<string>
+
+1728511864 source:c:\users\gbols\onedrive\documents\engo333lab5\lab5\matrixfunctions_lab5.cpp
+	"MatrixFunctions_Lab5.h"
+	<iostream>
+	<math.h>
+
+1728511078 c:\users\gbols\onedrive\documents\engo333lab5\lab5\matrixfunctions_lab5.h
+	"Matrix_Lab5.h"
+
+1728511909 source:c:\users\gbols\onedrive\documents\engo333lab5\lab5\lab4.cpp
+	"Matrix_Lab5.h"
+	"MatrixFunctions_Lab5.h"
+	<iostream>
+	<fstream>
+
+1728509882 c:\users\gbols\onedrive\documents\engo333lab5\lab5\matrix_lab4.h
+	<vector>
+	<string>
+
+1728509882 c:\users\gbols\onedrive\documents\engo333lab5\lab5\matrixfunctions.h
+	"Matrix_Lab4.h"
+
+1728509882 source:c:\users\gbols\onedrive\documents\engo333lab5\lab5\matrixfunctions.cpp
+	"MatrixFunctions.h"
+	<iostream>
+	<bits/stdc++.h>
+
