@@ -31,7 +31,14 @@ Matrix Multiply(const Matrix& A, const Matrix& B)
 Matrix Multiply(const Matrix& A, double k)
 {
     //To do: implement this function to return A scaled by k
-    Matrix result;
+    Matrix result(A.getrows(), A.getcols());
+    for (unsigned int i = 0; i < result.getrows(); i++)
+    {
+        for (unsigned int j = 0; j < result.getcols(); j++)
+        {
+            result.at(i,j) = k*A.at(i,j);
+        }
+    }
 
 
     return result;

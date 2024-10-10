@@ -329,3 +329,54 @@ void Matrix::print( const string& filename, int width, int precision )
    // close the file
    out.close();
 }
+
+Matrix Matrix::operator*(Matrix B) {
+    if(this->getcols()!=B.getrows())
+    {
+        cout << "Matrix multiplication only works if the inner dimensions (A columns == B rows) agree" << endl;
+        exit(1);
+    }
+    Matrix result(this->getrows(), B.getcols());
+    for (unsigned int i = 0; i < result.getrows(); i++)
+    {
+        for (unsigned int j = 0; j < result.getcols(); j++)
+        {
+            result.at(i,j) = 0.0;
+            for (unsigned int k = 0; k < this->getcols(); k++)   //A columns = B rows
+            {
+                result.at(i,j) += this->at(i,k)*B.at(k,j);   //multiply and add up the inner dimension
+            }
+        }
+    }
+    return result;
+}
+
+Matrix Matrix::operator*(double k) {
+    //To do: implement this function to return A scaled by k
+    Matrix result(this->getrows(), this->getcols());
+    for (unsigned int i = 0; i < result.getrows(); i++)
+    {
+        for (unsigned int j = 0; j < result.getcols(); j++)
+        {
+            result.at(i,j) = k*this->at(i,j);
+        }
+    }
+    return result;
+}
+
+Matrix Matrix::operator+(Matrix B) {
+    if(this->getcols()!=B.getcols() || this->getrows() != B.getrows())
+    {
+        cout << "Matrix addition only works if the matrices are the same dimensions" << endl;
+        exit(1);
+    }
+    Matrix result(this->getrows(), B.getcols());
+    for (unsigned int i = 0; i < result.getrows(); i++)
+    {
+        for (unsigned int j = 0; j < result.getcols(); j++)
+        {
+            result.at(i,j) = this->at(i,j)+B.at(i,j);
+        }
+    }
+    return result;
+}

@@ -38,3 +38,31 @@
 	<iostream>
 	<bits/stdc++.h>
 
+1728577287 source:c:\users\gbols\documents\github\engo333lab5\lab5\matrix_lab5.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<fstream>
+	<iomanip>
+	<cmath>
+	"Matrix_Lab5.h"
+
+1728574949 c:\users\gbols\documents\github\engo333lab5\lab5\matrix_lab5.h
+	<vector>
+	<string>
+
+1728575228 source:c:\users\gbols\documents\github\engo333lab5\lab5\matrixfunctions_lab5.cpp
+	"MatrixFunctions_Lab5.h"
+	<iostream>
+	<math.h>
+
+1728574949 c:\users\gbols\documents\github\engo333lab5\lab5\matrixfunctions_lab5.h
+	"Matrix_Lab5.h"
+
+1728578218 source:c:\users\gbols\documents\github\engo333lab5\lab5\lab4.cpp
+	"Matrix_Lab5.h"
+	"MatrixFunctions_Lab5.h"
+	<iostream>
+	<fstream>
+	<math.h>
+
